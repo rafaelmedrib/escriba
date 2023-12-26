@@ -1,7 +1,9 @@
 // import { FileManager } from "./services/FileManager";
 
-import { CsvParser } from "./services/CsvParser";
-import { FileManager } from "./services/FileManager";
+import { MongoRepository } from "./repository/MongoRepository";
+
+// import { CsvParser } from "./services/CsvParser";
+// import { FileManager } from "./services/FileManager";
 
 // const fm = new FileManager();
 
@@ -15,8 +17,22 @@ import { FileManager } from "./services/FileManager";
 // console.log(fm.path = 'mocks')
 // console.log(fm.path)
 
-const csvParser = new CsvParser<Record<string, unknown>>();
-const fm = new FileManager();
-fm.path = 'test/mocks';
-const readStream = fm.read('dataExample.csv');
-csvParser.parseCsv(readStream).then((data) => console.log(data));
+// const csvParser = new CsvParser<Record<string, unknown>>();
+// const fm = new FileManager();
+// fm.path = 'test/mocks';
+// const readStream = fm.read('dataExample.csv');
+// csvParser.parseCsv(readStream).then((data) => console.log(data));
+
+// (async () => {
+//   try {
+//     const mongo = MongoRepository.getInstance()
+//     await mongo.connect();
+//     console.log('Connected to MongoDB');
+//     const result = await mongo.add({ name: 'John Doe' }, 'users');
+//     console.log(result);
+//     await mongo.disconnect();
+//     console.log('Disconnected from MongoDB');
+//   } catch (error) {
+//     console.log(error);
+//   }
+// })();
