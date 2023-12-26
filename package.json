@@ -18,8 +18,10 @@
     "chalk": "^5.3.0",
     "csvtojson": "^2.0.10",
     "inquirer": "^9.2.12",
-    "lodash": "^4.17.21",
-    "ts-node": "^10.9.2",
-    "typescipt": "^1.0.0"
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
   }
 }
